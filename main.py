@@ -35,7 +35,7 @@ def generate_sitemap(start_url, max_depth=2):
     return sitemap
 
 if __name__ == "__main__":
-    start_url = "https://yposteriormente.com"
+    start_url = "https://www.example.com" # Change this to the URL you want to generate a sitemap for your website
     sitemap = generate_sitemap(start_url)
     for url in sitemap:
         with open("sitemap.xml", "w") as file:
